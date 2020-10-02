@@ -161,8 +161,6 @@
              (map (fn [[offset [itm itm-idx]]]
                     [itm (- itm-idx offset)])))))
 
-(label-symbol-mapping (parse-codes (slurp "resources/max/Max.asm")))
-
 (defn assembler
   [source]
   (let [codes         (parse-codes source)
